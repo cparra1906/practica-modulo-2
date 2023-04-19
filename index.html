@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digimon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <nav class="navbar navbar-expand sticky-top bg-primary navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/digimon-logo.svg" alt="Digimon" type="image/svg+xml">
+            </a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown me-2">
+                        <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                            Nivel
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="checkTodos" checked="">
+                                        <label class="form-check-label w-100" for="checkTodos">
+                                            Todos los niveles
+                                        </label>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="checkBebe1">
+                                        <label class="form-check-label w-100" for="checkBebe1">
+                                            Bebé 1
+                                        </label>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="checkBebe2">
+                                        <label class="form-check-label w-100" for="checkBebe2">
+                                            Bebé 2
+                                        </label>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="checkNovato">
+                                        <label class="form-check-label w-100" for="checkNovato">
+                                            Novato
+                                        </label>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="checkCampeon">
+                                        <label class="form-check-label w-100" for="checkCampeon">
+                                            Campeón
+                                        </label>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="checkUltra">
+                                        <label class="form-check-label w-100" for="checkUltra">
+                                            Ultra
+                                        </label>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="checkMega">
+                                        <label class="form-check-label w-100" for="checkMega">
+                                            Mega
+                                        </label>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="checkArmadura">
+                                        <label class="form-check-label w-100" for="checkArmadura">
+                                            Armadura
+                                        </label>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container py-3">
+            <!-- <div class="row gy-2 gx-2"> -->
+            <div class="row g-2 row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-xl-5" id="digimons">
+                <!-- 
+                <div class="col">
+                    <div class="card ">
+                        <img src="assets/img/agumon.jpg" class="card-img-top img-fluid" alt="Imagen digimon">
+                        <div class="card-body">
+                          <h5 class="card-title">Agumon</h5>
+                        </div>
+                    </div>
+                </div>
+                 -->
+                <!-- 
+                <div class="col-6 col-sm-4 col-md-3">
+                    <div class="card ">
+                        <img src="assets/img/agumon.jpg" class="card-img-top img-fluid" alt="Imagen digimon">
+                        <div class="card-body">
+                          <h5 class="card-title">Agumon</h5>
+                        </div>
+                    </div>
+                </div>
+                 -->
+            </div>
+        </div>
+        <div class="modal" tabindex="-1" id="modalDigimon">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalNombreDigimon"></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="" class="card-img-top img-fluid" alt="" id="modalImagenDigimon">
+                </div>
+                <div class="modal-footer text-center">
+                    <p id="modalNivelDigimon"></p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-secondary text-light py-1">
+        <div class="container-fluid">
+            <p class="text-center mb-0"><i class="fa-regular fa-copyright"></i> 2023 Bandai</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="assets/js/script-index.js"></script>
+</body>
+</html>
